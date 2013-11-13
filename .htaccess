@@ -3,3 +3,9 @@ ErrorDocument 401 /errors/authreqd/
 ErrorDocument 403 /errors/forbidd/
 ErrorDocument 404 /errors/notfound/
 ErrorDocument 500 /errors/serverr/
+
+# PROTECT SENSITIVE FILES BY FILE EXTENSION 
+<FilesMatch "\.(htaccess|htpasswd|ini|fla|psd|log|git)$”>
+ Order Deny,Allow
+ Deny from all 
+</FilesMatch>
