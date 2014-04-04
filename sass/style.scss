@@ -1,62 +1,16 @@
-/* Sass Reset - by Hampton Catlin. 
-   A modification of the original from http://meyerweb.com/eric/tools/css/reset/
-   --------------------------------------------------------------------------- */
+@import 'normalize';
+@import 'typecsset';
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, 
-h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, 
-cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, 
-strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, 
-ol, ul, li, fieldset, form, label, legend, table, caption, 
-tbody, tfoot, thead, tr, th, td, article, aside, canvas, 
-details, embed, figure, figcaption, footer, header, hgroup, main, 
-menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-	font-size: 100%;
-  vertical-align: baseline;
+
+/* apply a natural box layout model to all elements */
+*, 
+*:before, 
+*:after {
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
 }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, 
-header, hgroup, main, menu, nav, section {
-  display: block;
-}
-
-em {
-	font-style: italic;
-}
-h1 {
-	font-size: 125%;
-	font-weight: bold;
-	margin-bottom: 0;
-}
-p {
-	margin: 2em 0;
-	padding: 0 1.5em;
-}
-ul {
-	list-style: none;
-}
-
-/* Text for screen readers. */
-.screen-reader-text {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding:0 !important;
-  border:0 !important;
-  height: 1px !important; 
-  width: 1px !important; 
-  overflow: hidden;
-}
-.screen-reader-text {
-	position: relative !important;
-}
-.no-js .screen-reader-text {
-	position: relative !important;
-}
 
 /* Custom font-icon */
 @font-face {
@@ -69,12 +23,18 @@ ul {
 	font-weight: normal;
 	font-style: normal;
 }
-/* Link rules */
+
+
+/* Link and focus styles */
 a, a:visited {
-	border-bottom: 1px solid #999;
+	border-bottom: 1px solid #bbb;
 	color: #333;
 	padding-bottom: 0.15em;
 	text-decoration: none;
+	&:hover {
+		border: 0;
+		background: #ffc;
+	}
 	&:focus {
 		border: 0;
 		outline: 4px solid #f00;
@@ -83,66 +43,53 @@ a, a:visited {
 	}
 }
 
-/* Single page style declarations
-   --------------------------------------------------------------------------- */
 
-html, body {
-	background: #efefef;
+body {
 	color: #333;
 	font-family: Georgia, serif;
-	font-size: 100%;
-	line-height: 2;
+	margin: 0 auto;
+	max-width: 32em;
 }
-lt-ie9  {
-	text-align: center;
+.lte-ie8 body {
+	width: 32em;
 }
 .wrap {
-	margin: 0 auto;
-	width: 24em;
-}
-.entry {
-	padding: 2.5em 0;
-	text-align: center;
-}
-.entry--intro {
-	font-size: 150%;
-	line-height: 1.35;
-	margin-bottom: 0;
-	padding: 0;
+	padding: 3em 5%;
+}	
+.tag-line {
+	font-size:21px;
+	font-size:1.3125rem;
+	line-height:1.14286
 }
 .entry--compliment {
-	padding: 1.25em 0;
+	text-align: center;
 }
-.lt-ie9 .screen-reader-text {
+
+/* Assistive text screen readers. */
+.assistive-text {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+.assistive-text,
+.no-js .assistive-text {
 	position: relative !important;
 }
 
+
 @media only screen {
-	html, body {
-		height: 100%;
+	.entry--content {
+		padding-bottom: 3em;
 	}
-	.wrap {
-		display: table;
-		height: 100%;
-		width: auto;
-	}
-	.entry {
-		display: table-cell;
-		padding: 1.25em 1.25em 4.75em;
-		max-width: 24em;
-		position: relative;
-		vertical-align: middle;
-	}
-	.entry--compliment {
-		position: absolute;
-		right: 0;
-		bottom: 0;
-		left: 0;
-	}
-	.screen-reader-text {
+	.assistive-text {
 		position: absolute !important;
 	}
-	.no-fontface .screen-reader-text {
+	.no-fontface .assistive-text {
 		position: relative !important;
 	}
 	.fontface .connect-email {
