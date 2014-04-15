@@ -29,7 +29,7 @@
 a, a:visited {
 	border-bottom: 1px solid #bbb;
 	color: #333;
-	padding-bottom: 0.15em;
+	padding-bottom: 0.05em;
 	text-decoration: none;
 	&:hover {
 		border: 0;
@@ -38,8 +38,8 @@ a, a:visited {
 	&:focus {
 		border: 0;
 		outline: 4px solid #f00;
-		margin: -0.1875em -0.375em;
-		padding: 0.1875em 0.375em;
+		margin: -0.09375em -0.1875em;
+		padding: 0.09375em 0.1875em;
 	}
 }
 .entry--compliment a:hover {
@@ -49,7 +49,7 @@ a, a:visited {
 
 body {
 	color: #333;
-	font-family: "adelle-sans", sans-serif;
+	font-family: "adelle-sans", Arial, sans-serif;
 	margin: 0 auto;
 	max-width: 32em;
 }
@@ -60,13 +60,13 @@ body {
 	padding: 3em 5%;
 }	
 h1 {
-	font-family: "adelle",serif;
+	font-family: "adelle", Georgia, serif;
 }
-.tag-line {
-	font-family: "adelle", serif;
+.intro {
+	font-family: "adelle", Georgia, serif;
 	font-size:21px;
 	font-size:1.3125rem;
-	font-weight: bold;
+	font-weight: 600;
 	line-height:1.14286
 }
 .entry--compliment {
