@@ -10,7 +10,7 @@
 
 	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
-	<title>{% if page.class contains 'home' %}{{ site.title }}{% else %}{{ page.title }} &mdash; I'm  a Johnny Taylor{% endif %}</title>
+	<title>{% if page.class == 'home' %}{{ site.title }}{% else %}{{ page.title }} &mdash; {{ site.title }}{% endif %}</title>
 
 	<link rel="stylesheet" href="/css/style.css" />
 
@@ -36,7 +36,7 @@
 
 			</section>
 			<aside class="entry--compliment" role="complementary">
-						<a href="mailto:queries@ajohnnytaylor.org" class="connect-email" rel="external"><span class="assistive-text">Email me directly</span></a>
+				<a href="mailto:queries@ajohnnytaylor.org" class="connect-email" rel="external"><span class="assistive-text">Email me directly</span></a>
 			</aside>
 
 		</article>
