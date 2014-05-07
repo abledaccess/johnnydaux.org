@@ -1,6 +1,7 @@
 ---
 layout: default
 class: home
+title: I'm a Johnny Taylor
 description: "And quite simply, I'm a disabled web artist searching for a little accessible value for users in the time I dedicate to this medium."
 ---
 
