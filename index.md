@@ -2,7 +2,7 @@
 layout: default
 class: home
 title: I'm a Johnny Taylor
-description: "And quite simply, I'm a disabled web artist searching for a little accessible value for us users in the time I dedicate to this medium."
+description: "And quite simply, I'm a disabled web worker searching for a little accessible value for us users in the time I dedicate to this medium."
 ---
 
 <p class="intro">And quite simply, I'm a disabled web worker searching for a little <em>accessible</em> value for us users in the time I dedicate to this medium.</p>
