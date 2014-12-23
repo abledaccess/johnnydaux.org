@@ -31,7 +31,8 @@ a, a:visited {
 	color: #333;
 	padding-bottom: 0.05em;
 	text-decoration: none;
-	&:hover {
+	&:hover,
+	&:visited {
 		border: 0;
 		background: #ffc;
 	}
@@ -126,7 +127,9 @@ h1 {
 		text-transform: none;
 		line-height: 1;
 		padding: 0.1875em !important;
+		/* Better Font Rendering =========== */
 		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
 	}
 	.no-fontface .connect-email {
 		color: #333;
@@ -136,7 +139,7 @@ h1 {
 		font-size: 1em;
 	}
 	.fontface .connect-email:before {
-		content: "\e000";
+		content: "\e601";
 	}
 	.no-fontface .connect-email:before {
 		content: "";
