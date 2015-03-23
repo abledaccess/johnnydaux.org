@@ -29,7 +29,6 @@
 a, a:visited {
 	border-bottom: 1px solid #bbb;
 	color: #333;
-	padding-bottom: 0.05em;
 	text-decoration: none;
 	&:hover,
 	&:visited {
@@ -39,8 +38,6 @@ a, a:visited {
 	&:focus {
 		border: 0;
 		outline: 4px solid #f00;
-		margin: -0.09375em -0.1875em;
-		padding: 0.09375em 0.1875em;
 	}
 }
 .entry--compliment a:hover {
@@ -51,22 +48,23 @@ a, a:visited {
 body {
 	color: #333;
 	font-family: "adelle-sans", Arial, sans-serif;
+	font-size: 100%;
 	margin: 0 auto;
-	max-width: 30em;
+	max-width: 32em;
 }
 .lte-ie8 body {
+	max-width: auto;
 	width: 32em;
 }
 .wrap {
-	padding: 3em 5%;
-}	
+	padding: 1.5em 6%;
+}
 h1 {
 	font-family: "adelle", Georgia, serif;
 }
 .intro {
 	font-family: "adelle", Georgia, serif;
-	font-size:21px;
-	font-size:1.3125rem;
+	font-size:1.3125em;
 	font-weight: bold;
 	line-height:1.14286
 }
@@ -91,7 +89,7 @@ h1 {
 }
 
 
-@media only screen {
+@media screen {
 	html,
 	body,
 	.wrap {
@@ -135,7 +133,7 @@ h1 {
 		color: #333;
 		border-bottom: 1px solid #999;
 		padding: 0;
-		padding-bottom: 0.15em;
+		padding-bottom: 0.1em;
 		font-size: 1em;
 	}
 	.fontface .connect-email:before {
@@ -143,5 +141,42 @@ h1 {
 	}
 	.no-fontface .connect-email:before {
 		content: "";
+	}
+
+	.cssvwunit body {
+		font-size: 3vmin;
+	}
+	.cssvwunit h1 {
+		font-size: 7.1vmin;
+	}
+	.cssvwunit .intro {
+		font-size: 3.8vmin;
+	}
+	.cssvwunit a, .cssvwunit a:visited {
+		border-bottom: 0.25vmin solid #999;
+	}
+}
+
+@media screen and (max-width: 34em) {
+	.cssvwunit body {
+		font-size: 100%;
+	}
+	.cssvwunit h1 {
+		font-size: 2.375em;
+	}
+	.cssvwunit .intro {
+		font-size: 1.25em;
+	}
+}
+
+@media screen and (max-height: 33em) {
+	.cssvwunit body {
+		font-size: 100%;
+	}
+	.cssvwunit h1 {
+		font-size: 2.375em;
+	}
+	.cssvwunit .intro {
+		font-size: 1.25em;
 	}
 }
