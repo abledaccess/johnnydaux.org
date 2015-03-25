@@ -26,22 +26,35 @@
 
 
 /* Link and focus styles */
-a, a:visited {
-	border-bottom: 1px solid #bbb;
+a {
+	border-bottom: 1px solid #36f;
 	color: #333;
+	padding-bottom: 0.1em;
 	text-decoration: none;
-	&:hover,
-	&:visited {
-		border: 0;
-		background: #ffc;
-	}
-	&:focus {
-		border: 0;
-		outline: 4px solid #f00;
-	}
+}
+a:visited {
+	border-color: #bbb;
+}
+a:hover {
+	background: #ffc;
+	border: 0;
+	margin: -0.1em -0.2em;
+	padding: 0.1em 0.2em;
+}
+a:focus {
+	background: #000;
+	border: 0;
+	color: #fff;
+	margin: -0.1em -0.2em;
+	outline: 0;
+	padding: 0.1em 0.2em;
 }
 .entry--compliment a:hover {
-	background: #fff
+	background: #fff;
+}
+.no-fontface .entry--compliment a:hover,
+.no-js .entry--compliment a:hover {
+	background: #ffc;
 }
 
 
@@ -129,6 +142,12 @@ h1 {
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 	}
+	.fontface .connect-email:focus:hover {
+		color: #36f;
+	}
+	.fontface .connect-email:focus {
+		color: #fff;
+	}
 	.no-fontface .connect-email {
 		color: #333;
 		border-bottom: 1px solid #999;
@@ -153,23 +172,13 @@ h1 {
 		font-size: 3.8vmin;
 	}
 	.cssvwunit a, .cssvwunit a:visited {
-		border-bottom: 0.25vmin solid #999;
+		border-width: 0.25vmin;
 	}
+
 }
 
-@media screen and (max-width: 34em) {
-	.cssvwunit body {
-		font-size: 100%;
-	}
-	.cssvwunit h1 {
-		font-size: 2.375em;
-	}
-	.cssvwunit .intro {
-		font-size: 1.25em;
-	}
-}
 
-@media screen and (max-height: 33em) {
+@media screen and (max-width: 34em), (max-height: 33em) {
 	.cssvwunit body {
 		font-size: 100%;
 	}
