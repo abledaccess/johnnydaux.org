@@ -3,6 +3,10 @@ layout: default
 class: home
 title: I'm a Johnny Taylor
 description: "And I'm a disabled web worker searching for accessible value for all us users in and about the web medium."
+sitemap:
+  priority: 0.9
+  changefreq: monthly
+  exclude: 'no'
 ---
 
 <p class="intro">And I'm a disabled web worker searching for accessible value for all us users in and about the web medium.</p>
