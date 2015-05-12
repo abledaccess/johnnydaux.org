@@ -27,17 +27,19 @@
 
 /* Link and focus styles */
 a {
-	border-bottom: 1px solid #36f;
-	color: #333;
+	border-bottom: 1px solid #69f;
+	color: #222;
 	padding-bottom: 0.1em;
 	text-decoration: none;
 }
 a:visited {
-	border-color: #bbb;
+	border-color: #555;
 }
-a:hover {
-	background: #ffc;
+a:hover,
+a:active {
+	background: #ffc !important;
 	border: 0;
+	color: #222 !important;
 	margin: -0.1em -0.2em;
 	padding: 0.1em 0.2em;
 }
@@ -59,7 +61,7 @@ a:focus {
 
 
 body {
-	color: #333;
+	color: #222;
 	font-family: "adelle-sans", Arial, sans-serif;
 	font-size: 100%;
 	margin: 0 auto;
