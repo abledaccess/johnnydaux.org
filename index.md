@@ -9,6 +9,6 @@ sitemap:
   exclude: 'no'
 ---
 
-<p class="intro">And I'm a disabled web worker. It's my job to keep web accessibility non-elite!</p>
+<p class="intro">I'm a disabled web worker. And it's my job to keep web accessibility non-elite!</p>
 
-I begin to accomplish this by <a href="https://abledaccess.com" rel="external">blogging experiences surrounding a life in this digital landscape</a>. Helping to build solutions for a more inclusive internet by <a href="http://fluidproject.org" rel="external">volunteering my efforts with the Fluid Project</a>. Performing web accessibility assessments. Speaking. And <a href="https://twitter.com/abledaccess" rel="external">jabbering on Twitter</a>.
+I begin to accomplish this by [blogging experiences surrounding a life in this digital landscape](https://abledaccess.com). Helping to build solutions for a more inclusive internet by [volunteering my efforts with the Fluid Project](http://fluidproject.org). Performing web accessibility assessments. [Speaking](http://accessconf.ca/accessibility-in-the-workplace-2015/#between). And [jabbering on Twitter](https://twitter.com/abledaccess).
