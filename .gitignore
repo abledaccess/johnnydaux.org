@@ -1,3 +1,6 @@
+.gitignore
+
 _site/
 art/
 .sass-cache/
+.jekyll-metadata
