@@ -11,4 +11,4 @@ sitemap:
 
 <p class="intro">I'm a disabled web worker. And it's my job to keep web accessibility non-elite!</p>
 
-I begin to accomplish this by [blogging experiences surrounding an existence in this modern digital landscape](https://abledaccess.com). [Helping to organize @a11yTO](https://twitter.com/a11yTO). Performing web accessibility assessments. [Writing](http://simplyaccessible.com/article/being-disabled-can-be-lame/). [Speaking (Latest talk: Session 3, Track D)](http://accessibilitycampto.org/schedule.php#pm1). And [jabbering on Twitter](https://twitter.com/abledaccess).
+I begin to accomplish this by [blogging experiences surrounding an existence in this modern digital landscape](https://abledaccess.com). [Helping to organize AccessibiltyToronto (@a11yTO)](https://twitter.com/a11yTO). Performing web accessibility assessments. [Writing](http://simplyaccessible.com/article/being-disabled-can-be-lame/). [Speaking (Latest talk: Session 3, Track D)](http://accessibilitycampto.org/schedule.php#pm1). And [jabbering on Twitter](https://twitter.com/abledaccess).
