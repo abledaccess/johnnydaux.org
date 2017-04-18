@@ -40,16 +40,12 @@ a:active {
 	background: #ffc !important;
 	border: 0;
 	color: #222 !important;
-	margin: -0.1em -0.2em;
-	padding: 0.1em 0.2em;
 }
 a:focus {
 	background: #000;
 	border: 0;
 	color: #fff;
-	margin: -0.1em -0.2em;
 	outline: 0;
-	padding: 0.1em 0.2em;
 }
 .entry--compliment a:hover {
 	background: #fff;
@@ -65,7 +61,7 @@ body {
 	font-family: "adelle-sans", Arial, sans-serif;
 	font-size: 100%;
 	margin: 0 auto;
-	max-width: 32em;
+	max-width: 26em;
 }
 .lte-ie8 body {
 	max-width: auto;
@@ -73,6 +69,13 @@ body {
 }
 .wrap {
 	padding: 1.5em 6%;
+}
+img {
+	border-radius: 50%;
+	display: block;
+	height: auto;
+	margin: 0 auto;
+	max-width: 10em;
 }
 h1 {
 	font-family: "adelle", Georgia, serif;
