@@ -1,7 +1,7 @@
 ---
 layout: default
 class: home
-title: I'm Johnny Taylor
+title: I'm a Johnny Taylor
 description: "But one of many. I'm a disabled web worker, and it's my job to keep web accessibility non-elite!"
 sitemap:
   priority: 0.9
