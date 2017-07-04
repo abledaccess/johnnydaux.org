@@ -11,4 +11,4 @@ sitemap:
 
 <p class="intro">But one of many. I'm a disabled web worker, and it's my job to keep web accessibility non-elite!</p>
 
-But seriously, I begin to accomplish this by [blogging about a technologica11y enhanced existence](https://abledaccess.com). [Organizing #a11yTO](http://a11yto.com). Performing web accessibility assessments. [Writing](http://simplyaccessible.com/article/being-disabled-can-be-lame/). [Speaking (Last Talk: Adaptability has very real consequences)](http://accessconf.ca/sessions/). And [jabbering on Twitter](https://twitter.com/abledaccess).
+But seriously, I begin to accomplish this by [blogging about a technologica11y enhanced existence](https://abledaccess.com). [Co-organizing #a11yTO](http://a11yto.com). Performing web accessibility assessments. [Writing](http://simplyaccessible.com/article/being-disabled-can-be-lame/). [Speaking (Last Talk: Adaptability has very real consequences)](http://accessconf.ca/sessions/). And [jabbering on Twitter](https://twitter.com/abledaccess).
