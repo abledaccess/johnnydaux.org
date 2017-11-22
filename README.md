@@ -1,6 +1,6 @@
 # ajohnnytaylor.org
 
-"I’m a Johnny Taylor. I’m a disabled web worker. And it’s my job to keep web accessibility non-elite!"
+"I’m a Johnny Taylor. But one of many. I’m a disabled web worker, and it’s my job to keep web accessibility non-elite!"
 
 ## About
 
