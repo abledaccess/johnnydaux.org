@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: "I'm a Johnny Taylor"
 email: johnny@abledaccess.com
-description: "But one of many. I'm a disabled web worker, and it's my job to keep web accessibility non-elite!"
+description: "But one of many. I'm a disabled web worker, technologica11y enhanced and powered by plants!"
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://ajohnnytaylor.org/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: abledaccess

@@ -1,10 +1,10 @@
 # ajohnnytaylor.org
 
-"I’m a Johnny Taylor. But one of many. I’m a disabled web worker, and it’s my job to keep web accessibility non-elite!"
+"I’m a Johnny Taylor. But one of many. I'm a disabled web worker, technologica11y enhanced and powered by plants!"
 
 ## About
 
-This project represents a landing hub linking to my most significant online exploits and activities. While serving as a spot, at least in part, to try out some new techniques. Namely my use of [Viewport-percentage lengths](http://www.w3.org/TR/css3-values/#viewport-relative-lengths), in the form ‘vmin’ units. 
+This project represents a landing hub linking to my most significant online exploits and activities. While serving as a spot, at least in part, to try out some new techniques. Namely my use of [Viewport-percentage lengths](http://www.w3.org/TR/css3-values/#viewport-relative-lengths), in the form ‘vmin’ units.
 
 Should your browser support these "distance relative length units" the text of the page will grow and shrink as you move both the width and height of your browser window proportionally.
 
