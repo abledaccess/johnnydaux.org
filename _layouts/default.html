@@ -2,7 +2,9 @@
 
 <!--[if IEMobile 7 ]><html class="iem7 no-js page {{ page.class }}"><![endif]-->
 <!--[if lt IE 9]><html class="lte-ie8 no-js page {{ page.class }}"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js page {{ page.class }}" lang="en"><!--<![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!-->
+<html class="no-js page {{ page.class }}" lang="en">
+<!--<![endif]-->
 
 <head>
 
@@ -12,14 +14,13 @@
 
 	<title>{% if page.class == 'home' %}{{ site.title }}{% else %}{{ page.title }} &ndash; {{ site.title }}{% endif %}</title>
 
-	<link rel="stylesheet" href="/css/style.css" />
+	<link rel="stylesheet" href="/css/main.css" />
 
 	<script src="/js/modernizr.js"></script>
 
 	<script type="text/javascript" src="//use.typekit.net/sxx0gdo.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
-{% if page.class == 'home' %}	<meta name="description" content="{{ page.description }}" />
+	<script type="text/javascript">try { Typekit.load(); } catch (e) { }</script> {% if page.class == 'home' %}
+	<meta name="description" content="{{ page.description }}" />
 
 </head>{% else %}</head>{% endif %}
 
@@ -31,7 +32,9 @@
 
 			<article class="entry--content">
 
-				<p><img src="images/johnny.jpg" alt="This is a selfie, taken from a low angle and looking over my right shoulder, wearing a red t-shirt and a mid-length, largely greying beard." /></p>
+				<p>
+					<img src="images/johnny.jpg" alt="This is a selfie, taken from a low angle and looking over my right shoulder, wearing a red t-shirt and a mid-length, largely greying beard." />
+				</p>
 
 				<h1>{{ page.title }}</h1>
 
@@ -39,7 +42,9 @@
 
 			</article>
 			<nav class="entry--compliment">
-				<a href="mailto:{{ site.email }}" class="connect-email" rel="external"><span class="assistive-text">Shoot me an email</span></a>
+				<a href="mailto:{{ site.email }}" class="connect-email" rel="external">
+					<span class="assistive-text">Shoot me an email</span>
+				</a>
 			</nav>
 
 		</div>
@@ -47,13 +52,15 @@
 	</div>
 
 	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		(function (i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date(); a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-	  ga('create', 'UA-50110403-1', 'ajohnnytaylor.org');
-	  ga('send', 'pageview');
+		ga('create', 'UA-50110403-1', 'ajohnnytaylor.org');
+		ga('send', 'pageview');
 
 	</script>
 
