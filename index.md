@@ -11,4 +11,4 @@ sitemap:
 
 <p class="intro">{{ site.description }}</p>
 
-While there's little that is unique about my name offline, I try, however, to provide myself an optimistically noteworthy voice through various virtual means: [I blog about my life as a quadriplegic](https://abledaccess.com); [co-organize #a11yTO](http://a11yto.com); perform web accessibility assessments; [guest write](http://simplyaccessible.com/article/being-disabled-can-be-lame/); "speak"; and [jabber on Twitter](https://twitter.com/abledaccess).
+While there's little that is unique about my name offline, I try, however, to provide myself an optimistically noteworthy voice through various means online: [I blog about my life as a quadriplegic](https://abledaccess.com); [co-organize #a11yTO](http://a11yto.com); perform web accessibility assessments; [guest write](http://simplyaccessible.com/article/being-disabled-can-be-lame/); and [jabber on Twitter](https://twitter.com/abledaccess).
