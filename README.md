@@ -1,6 +1,6 @@
-# ajohnnytaylor.org
+# johnnydaux.org
 
-"I’m a Johnny Taylor. But one of many. I'm a disabled web worker, technologica11y enhanced and powered by plants!"
+"I'm Johnny, just one of many. I'm a disabled web worker, technologica11y enhanced and powered by plants!"
 
 ## About
 
@@ -8,4 +8,4 @@ This project represents a landing hub linking to my most significant online expl
 
 Should your browser support these "distance relative length units" the text of the page will grow and shrink as you move both the width and height of your browser window proportionally.
 
-Please check and [try the result out at ajohnnytaylor.org](http://ajohnnytaylor.org).
+Please check and [try the result out at johnnydaux.org](http://johnnydaux.org).
