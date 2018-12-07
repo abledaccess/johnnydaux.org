@@ -1,8 +1,6 @@
 ---
 layout: default
 class: home
-title: I'm Johnny, just one of many
-description: "I'm a disabled web worker, technologica11y enhanced and powered by plants!"
 sitemap:
   priority: 0.9
   changefreq: monthly
