@@ -1,6 +1,6 @@
 # johnnydaux.org
 
-"I'm Johnny, just one of many. I'm a disabled web worker, technologica11y enhanced and powered by plants!"
+"My name is Johnny, I'm just one of many. But I'm also a disabled web worker, technologica11y enhanced, and powered by plants!"
 
 ## About
 
