@@ -8,4 +8,4 @@ This project represents a landing hub linking to my most significant online expl
 
 Should your browser support these "distance relative length units" the text of the page will grow and shrink as you move both the width and height of your browser window proportionally.
 
-Please check and [try the result out at johnnydaux.org](http://johnnydaux.org).
+Please check and [try the result out at johnnydaux.org](https://johnnydaux.org).
