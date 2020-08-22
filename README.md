@@ -1,11 +1,9 @@
 # johnnydaux.org
 
-"My name is Johnny, I'm just one of many. But I'm also a disabled web worker, technologica11y enhanced, and powered by plants!"
+"My name is Johnny, I'm just one of many. But I’m also a disabled web worker, technologica11y enhanced, and, as evidenced by my continued existence, a plant powered antifascist!"
 
-## About
+## About johnnydaux.org
 
-This project represents a landing hub linking to my most significant online exploits and activities. While serving as a spot, at least in part, to try out some new techniques. Namely my use of [Viewport-percentage lengths](http://www.w3.org/TR/css3-values/#viewport-relative-lengths), in the form ‘vmin’ units.
+The "daux" in "johnnydaux" is meant to be pronounced "doe". On the [actual site](https://johnnydaux.org) I explain how my name, Johnny, isn't all that unique and, thus, the domain is meant to be a play on "John Doe" – a moniker secondarily used to reference the "[everyman](https://en.wikipedia.org/wiki/Everyman)".
 
-Should your browser support these "distance relative length units" the text of the page will grow and shrink as you move both the width and height of your browser window proportionally.
-
-Please check and [try the result out at johnnydaux.org](https://johnnydaux.org).
+With that said, and much more to the point, this project represents a landing hub linking to my most significant online exploits and activities.
