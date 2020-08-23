@@ -1,0 +1,20 @@
+{
+  "name": "johnnydaux",
+  "title": "My name is Johnny, I'm just one of many",
+  "description": "But I’m also a disabled web worker, technologica11y enhanced, and, as evidenced by my continued existence, a plant powered antifascist!",
+  "version": "1.0.0",
+  "homepage": "https://johnnydaux.org/",
+  "author": {
+    "name": "Johnny Taylor",
+    "email": "hi@johnnydaux.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abledaccess/johnnydaux.org"
+  },
+  "devDependencies": {
+    "grunt": "^1.2.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0"
+  }
+}
