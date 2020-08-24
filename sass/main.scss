@@ -51,6 +51,22 @@ a:focus {
 .no-js .entry--compliment a:hover {
   background: #ffc;
 }
+@supports (text-underline-offset: 0) {
+  a {
+    border: 0;
+    text-decoration-line: underline;
+    text-decoration-color: #36f;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.3em;
+    text-decoration-skip-ink: auto;
+    &:focus {
+      text-decoration-color: #fff;
+    }
+  }
+  .connect-email {
+    text-decoration-line: none;
+  }
+}
 
 body {
   color: #222;
