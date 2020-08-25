@@ -8,50 +8,54 @@
 
 <head>
 
-	<meta charset="UTF-8" />
+  <meta charset="UTF-8" />
 
-	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
-	<title>{% if page.class == 'home' %}{{ site.title }}{% else %}{{ page.title }} &ndash; {{ site.title }}{% endif %}</title>
+  <title>{% if page.class == 'home' %}{{ site.title }}{% else %}{{ page.title }} &ndash; {{ site.title }}{% endif %}</title>
 
-	<link rel="stylesheet" href="/css/main.css" />
-	<link rel="icon" type="image/gif" href="/favicon.gif">
-	<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="icon" type="image/gif" href="/favicon.gif">
+  <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" />
 
-	<script src="/js/modernizr.js"></script>
+  <script src="/js/modernizr.js"></script>
 
-	<script type="text/javascript" src="//use.typekit.net/sxx0gdo.js"></script>
-	<script type="text/javascript">try { Typekit.load(); } catch (e) { }</script> {% if page.class == 'home' %}
-	<meta name="description" content="{{ site.description }}" />
+  <script type="text/javascript" src="//use.typekit.net/sxx0gdo.js"></script>
+  <script type="text/javascript">try { Typekit.load(); } catch (e) { }</script> {% if page.class == 'home' %}
+  <meta name="description" content="{{ site.description }}" />
 
 </head>{% else %}</head>{% endif %}
 
 <body>
 
-	<div class="wrap">
+  <div class="wrap">
 
-		<div class="entry" role="main">
+    <div class="entry" role="main">
 
-			<article class="entry--content">
+      <article class="entry--content">
 
-				<p>
-					<img src="images/johnny.jpg" alt="This is a selfie, taken from a low angle and looking over my right shoulder, wearing a red t-shirt and a mid-length, largely greying beard." />
-				</p>
+        <p>
+          <img src="images/johnny.jpg" alt="This is a selfie, taken from a low angle and looking over my right shoulder, wearing a red t-shirt and a mid-length, largely greying beard." />
+        </p>
 
-				{% if page.class == 'not-found' %}<h1>{{ page.title }}</h1>{% else %}<h1>{{ site.title }}</h1>{% endif %}
+        {% if page.class == 'not-found' %}<h1>{{ page.title }}</h1>{% else %}<h1>{{ site.title }}</h1>{% endif %}
 
-				{{ content }}
+        {{ content }}
 
-			</article>
-			<nav class="entry--compliment">
-				<a href="mailto:{{ site.email }}" class="connect-email" rel="external">
-					<span class="assistive-text">Shoot me an email</span>
-				</a>
-			</nav>
+      </article>
+      <nav class="entry--compliment">
+        <a href="mailto:{{ site.email }}" class="connect-email" rel="external">
+          <svg id="email-icon" class="icon" focusable="false" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 26">
+            <title>Email me</title>
+            <path d="M29,4H3A3,3,0,0,0,0,7V27a3,3,0,0,0,3,3H29a3,3,0,0,0,3-3V7A3,3,0,0,0,29,4ZM12.46,17.2,4,23.79V8.11ZM5.51,8h21L16,15.88Zm7.28,9.55L16,21l3.21-3.45L25.79,26H6.21l6.58-8.45Zm6.75-.35L28,8.11V23.79Z" transform="translate(0 -4)" />
+          </svg>
+          <span class="sr-only">Email me</span>
+        </a>
+      </nav>
 
-		</div>
+    </div>
 
-	</div>
+  </div>
 
 </body>
 
