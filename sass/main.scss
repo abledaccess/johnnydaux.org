@@ -54,10 +54,16 @@ body {
   font-family: "adelle-sans", Arial, sans-serif;
   font-size: 112.5%;
   margin: 0 auto;
-  max-width: 26em;
+  width: 26em;
 }
 .wrap {
   padding: 3em 6%;
+}
+@supports (max-width: 32em) {
+  body {
+    width: auto;
+    max-width: 32em;
+  }
 }
 img {
   border: 1px solid #555;
@@ -82,8 +88,7 @@ h1 {
   width: 3em;
 }
 
-
-@media screen {
+@supports (font-size: 3vmin) {
   .cssvwunit body {
     font-size: 3vmin;
   }
@@ -97,16 +102,15 @@ h1 {
   .cssvwunit a:visited {
     border-width: 0.25vmin;
   }
-}
-
-@media screen and (max-width: 37.5em), (max-height: 37.5em) {
-  .cssvwunit body {
-    font-size: 112.5%;
-  }
-  .cssvwunit h1 {
-    font-size: 2.375em;
-  }
-  .cssvwunit .intro {
-    font-size: 1.25em;
-  }
+  @media screen and (max-width: 37.5em), (max-height: 37.5em) {
+    .cssvwunit body {
+      font-size: 112.5%;
+    }
+    .cssvwunit h1 {
+      font-size: 2.375em;
+    }
+    .cssvwunit .intro {
+      font-size: 1.25em;
+    }
+  }  
 }
