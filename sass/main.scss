@@ -89,27 +89,27 @@ h1 {
 }
 
 @supports (font-size: 3vmin) {
-  .cssvwunit body {
+  body {
     font-size: 3vmin;
   }
-  .cssvwunit h1 {
+  h1 {
     font-size: 7.1vmin;
   }
-  .cssvwunit .intro {
+  .intro {
     font-size: 3.8vmin;
   }
-  .cssvwunit a,
-  .cssvwunit a:visited {
+  a,
+  a:visited {
     border-width: 0.25vmin;
   }
   @media screen and (max-width: 37.5em), (max-height: 37.5em) {
-    .cssvwunit body {
+    body {
       font-size: 112.5%;
     }
-    .cssvwunit h1 {
+    h1 {
       font-size: 2.375em;
     }
-    .cssvwunit .intro {
+    .intro {
       font-size: 1.25em;
     }
   }  
