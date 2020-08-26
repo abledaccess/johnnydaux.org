@@ -59,10 +59,10 @@ body {
 .wrap {
   padding: 3em 6%;
 }
-@supports (max-width: 32em) {
+@supports (max-width: 36em) {
   body {
     width: auto;
-    max-width: 32em;
+    max-width: 36em;
   }
 }
 img {
