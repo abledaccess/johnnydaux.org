@@ -23,20 +23,18 @@
 
   <div class="wrap">
 
-    <div class="entry" role="main">
+    <main class="entry">
 
       <article class="entry--content">
 
-        <p>
-          <img src="images/johnny.jpg" alt="This is a selfie, taken from a low angle and looking over my right shoulder, wearing a red t-shirt and a mid-length, largely greying beard." />
-        </p>
+        <p><img src="images/johnny.jpg" alt="This is a selfie, taken from a low angle and looking over my right shoulder, wearing a red t-shirt and a mid-length, largely greying beard." /></p>
 
         {% if page.class == 'not-found' %}<h1>{{ page.title }}</h1>{% else %}<h1>{{ site.title }}</h1>{% endif %}
 
         {{ content }}
 
       </article>
-      <nav class="entry--compliment">
+      <aside class="entry--compliment">
         <a href="mailto:{{ site.email }}" class="connect-email" rel="external">
           <svg id="email-icon" class="icon" focusable="false" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 26">
             <title>Email me</title>
@@ -44,9 +42,9 @@
           </svg>
           <span class="sr-only">Email me</span>
         </a>
-      </nav>
+      </aside>
 
-    </div>
+    </main>
 
   </div>
 
