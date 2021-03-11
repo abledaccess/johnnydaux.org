@@ -10,26 +10,25 @@
 
 /* Link and focus styles */
 a {
-  color: #222;
-}
-a:hover,
-a:active {
-  background: #ffc !important;
-  text-decoration: none;
-}
-a:focus {
-  outline: 4px solid #000;
+  color: #03f;
+  &:hover,
+  &:active {
+    background: #ffc !important;
+    text-decoration: none;
+  }
+  &:focus {
+    outline: 4px solid #000;
+  }
 }
 @supports (text-underline-offset: 0) {
   a {
-    border: 0;
-    text-decoration-line: underline;
-    text-decoration-color: #36f;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 0.18em;
+    color: #222;
+    text-decoration-color: #03f;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.15em;
     text-decoration-skip-ink: auto;
     &:focus {
-      text-decoration-color: #fff;
+      text-decoration: none;
     }
   }
 }
@@ -50,6 +49,7 @@ a:focus {
  /* End sr-only class */
 
 body {
+  background-color: #fff;
   color: #222;
   font-family: "adelle-sans", Arial, sans-serif;
   font-size: 112.5%;
@@ -69,7 +69,7 @@ body {
   margin-bottom: 1.5em;
 }
 img {
-  border: 1px solid #444;
+  border: 2px solid #444;
   border-radius: 50%;
   display: block;
   height: auto;
@@ -86,7 +86,9 @@ h1 {
   line-height: 1.14286;
 }
 .icon {
+  color: #36f;
   display: block;
+  fill: #03f;
   margin: 0 auto;
   width: 4em;
 }
@@ -112,4 +114,28 @@ h1 {
       font-size: 1.25em;
     }
   }  
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #222;
+    color: #eee;
+  }
+  a {
+    color: #eee;
+    &:focus {
+      outline-color: #fff;
+    }
+  }
+  img {
+    border-color: #eee;
+  }
+  .icon {
+    fill: #eee;
+  }
+  @supports (text-underline-offset: 0) {
+    a {
+      text-decoration-color: #fff;
+    }
+  }
 }
