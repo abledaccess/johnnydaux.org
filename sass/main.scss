@@ -11,25 +11,22 @@
 /* Link and focus styles */
 a {
   color: #03f;
-  &:hover,
-  &:active {
-    background: #ffc !important;
+  &:hover {
     text-decoration: none;
   }
+  &:active,
   &:focus {
-    outline: 4px solid #000;
+    outline: 3px solid #000;
+    text-decoration: none;
   }
 }
 @supports (text-underline-offset: 0) {
   a {
     color: #222;
     text-decoration-color: #03f;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 0.15em;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.175em;
     text-decoration-skip-ink: auto;
-    &:focus {
-      text-decoration: none;
-    }
   }
 }
 
@@ -85,12 +82,14 @@ h1 {
   font-weight: bold;
   line-height: 1.14286;
 }
+.entry--compliment {
+  text-align: center;
+}
 .icon {
-  color: #36f;
   display: block;
   fill: #03f;
   margin: 0 auto;
-  width: 4em;
+  width: 3.5em;
 }
 
 @supports (font-size: 3vmin) {
@@ -103,7 +102,7 @@ h1 {
   .intro {
     font-size: 3.8vmin;
   }
-  @media screen and (max-width: 37.5em), (max-height: 37.5em) {
+  @media screen and (max-width: 37.5em) {
     body {
       font-size: 112.5%;
     }
@@ -116,26 +115,27 @@ h1 {
   }  
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #222;
-    color: #eee;
-  }
-  a {
-    color: #eee;
-    &:focus {
-      outline-color: #fff;
-    }
-  }
-  img {
-    border-color: #eee;
-  }
-  .icon {
-    fill: #eee;
-  }
-  @supports (text-underline-offset: 0) {
-    a {
-      text-decoration-color: #fff;
-    }
-  }
-}
+// @media (prefers-color-scheme: dark) {
+//   body {
+//     background-color: #222;
+//     color: #eee;
+//   }
+//   a {
+//     color: #eee;
+//     &:active,
+//     &:focus {
+//       outline-color: #fff;
+//     }
+//   }
+//   img {
+//     border-color: #eee;
+//   }
+//   .icon {
+//     fill: #ddd;
+//   }
+//   @supports (text-underline-offset: 0) {
+//     a {
+//       text-decoration-color: #fff;
+//     }
+//   }
+// }
