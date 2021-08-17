@@ -1,6 +1,6 @@
 # johnnydaux.org
 
-"My name is Johnny, I'm just one of many. But I’m also a disabled web worker and, as evidenced by my continued existence, a stubbornly thriving, plant powered antifascist!"
+"But I’m so much more than a disabled web developer. Plus, as evidenced by my continued existence, I'm also a stubbornly thriving plant powered antifascist!"
 
 ## About this project
 
