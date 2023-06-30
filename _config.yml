@@ -14,14 +14,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: "My name is Johnny, merely one of many"
-description: "But I’m so much more than a disabled web developer. Plus, as evidenced by my continued existence, I'm also a stubbornly thriving, plant powered antifascist!"
+description: "And I’m more than a disabled web developer, but not much more. Plus, as evidenced by my continued existence, I'm also a plant powered, stubbornly thriving antifascist!"
 email: hi@johnnydaux.org
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://johnnydaux.org/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
 
