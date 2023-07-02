@@ -128,3 +128,23 @@ h1,
     }
   }
 }
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #222;
+    color: #eee;
+  }
+  a {
+    color: #eee;
+    &:active,
+    &:focus,
+    &:focus-visible {
+      outline-color: #fff;
+    }
+  }
+  .hero {
+    border-color: #eee;
+  }
+  .icon {
+    fill: #ddd;
+  }
+}

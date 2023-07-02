@@ -27,7 +27,11 @@
 
       <article class="entry--content">
 
-        <p><img class="hero" src="images/johnny.jpg" alt="A selfie, taken from a low angle and straight on of me looking over my right shoulder, wearing a red t-shirt and a mid-length, largely greying beard."></p>
+        <picture>
+          <source srcset="images/dark-johnny.jpg" media="(prefers-color-scheme: dark)">
+          <source srcset="images/johnny.jpg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+          <img class="hero" decoding="async" src="images/johnny.jpg" alt="A selfie, taken from a low angle and straight on of me looking over my right shoulder, wearing a red t-shirt and a mid-length, largely greying beard.">
+        </picture>
 
         {% if page.class == 'not-found' %}<h1>{{ page.title }}</h1>{% else %}<h1 class="entry--title">{{ site.title }}</h1>{% endif %}
 
