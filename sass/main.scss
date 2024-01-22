@@ -1,40 +1,48 @@
-@import "normalize";
-@import "typecsset";
+:root {
+  --font-primary-stack: adelle-sans, sans-serif;
+  --font-secondary-stack: adelle, serif;
+  --font-base-size: 3.6vmin;
 
-/* apply a natural box layout model to all elements */
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
+  --color-dark: #111;
+  --color-light: #eee;
+
+  --theme-color-fore: var(--color-dark);
+  --theme-color-back: var(--color-light);
+  --theme-color-link: #00f;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --theme-color-fore: var(--color-light);
+    --theme-color-back: var(--color-dark);
+    --theme-color-link: #99f;
+  }
 }
 
-/* Link and focus styles */
-a {
-  color: #03f;
-  &:hover {
-    text-decoration: none;
-  }
-  &:active,
-  &:focus {
-    outline: 3px solid #000;
-    text-decoration: none;
-  }
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+ html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
-@supports (text-underline-offset: 0) {
-  a {
-    color: #222;
-    text-decoration-color: #03f;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 0.175em;
-    text-decoration-skip-ink: auto;
-  }
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
 }
 
 /* -------------------------------------------------------------------------
  * Utility class to hide content visually while keeping it screen reader-accessible.
  * Source: https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html 
  * ------------------------------------------------------------------------- */
- .visually-hidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active) {
   clip: rect(0 0 0 0); 
   clip-path: inset(100%);
   height: 1px;
@@ -43,99 +51,76 @@ a {
   white-space: nowrap; 
   width: 1px;
 }
- /* End visually-hidden class */
 
-body {
-  background-color: #fff;
-  color: #222;
-  font-family: "adelle-sans", Arial, sans-serif;
-  font-size: 112.5%;
-  margin: 0 auto;
-  width: 26em;
+img {
+  width: 100%;
 }
-.wrap {
-  padding: 3em 6%;
-}
-@supports (max-width: 36em) {
-  body {
-    width: auto;
-    max-width: 36em;
+a:is(:link, :visited) {
+  color: var(--theme-color-link);
+  text-decoration-thickness: .1rem;
+  text-underline-offset: .25rem;
+  &:focus {
+    outline: 2px solid var(--theme-color-link);
+    outline-offset: 2px;
+    position: relative;
+    text-decoration: none;
+    z-index: 1000;
+  }
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+  &:focus-visible {
+    outline: max(2px, 0.125em) solid var(--theme-color-link);
+    outline-offset: 0.2rem;
+    text-decoration: none;
   }
 }
-.entry--content {
-  margin-bottom: 1.5em;
+
+body {
+  background-color: var(--theme-color-back);
+  color: var(--theme-color-fore);
+  font-family: var(--font-primary-stack);
+  font-size: 125%;
+  font-size: var(--font-base-size);
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 32em;
 }
-img {
-  border: 2px solid #444;
+.wrap {
+  margin: 3em 5%;
+}
+
+.hero {
+  border: 0.15em solid var(--theme-color-fore);
   border-radius: 50%;
   display: block;
   height: auto;
   margin: 0 auto;
-  width: 10em;
+  max-width: 12em;
 }
-h1 {
-  font-family: "adelle", Georgia, serif;
+.entry--content {
+  margin-bottom: 3em;
+}
+.entry--title {
+  font-size: 2.75em;
+  line-height: 1;
+}
+h1,
+.intro {
+  font-family: var(--font-secondary-stack);
 }
 .intro {
-  font-family: "adelle", Georgia, serif;
-  font-size: 1.3125em;
+  font-size: 1.25em;
   font-weight: bold;
-  line-height: 1.14286;
+  line-height: 1.3;
 }
 .entry--compliment {
   text-align: center;
 }
 .icon {
-  display: block;
-  fill: #03f;
+  display: inline-block;
+  fill: var(--theme-color-link);
   margin: 0 auto;
-  width: 3.5em;
+  width: 3em;
 }
-
-@supports (font-size: 3vmin) {
-  body {
-    font-size: 3vmin;
-  }
-  h1 {
-    font-size: 7.1vmin;
-  }
-  .intro {
-    font-size: 3.8vmin;
-  }
-  @media screen and (max-width: 37.5em) {
-    body {
-      font-size: 112.5%;
-    }
-    h1 {
-      font-size: 2.375em;
-    }
-    .intro {
-      font-size: 1.25em;
-    }
-  }  
-}
-
-// @media (prefers-color-scheme: dark) {
-//   body {
-//     background-color: #222;
-//     color: #eee;
-//   }
-//   a {
-//     color: #eee;
-//     &:active,
-//     &:focus {
-//       outline-color: #fff;
-//     }
-//   }
-//   img {
-//     border-color: #eee;
-//   }
-//   .icon {
-//     fill: #ddd;
-//   }
-//   @supports (text-underline-offset: 0) {
-//     a {
-//       text-decoration-color: #fff;
-//     }
-//   }
-// }
