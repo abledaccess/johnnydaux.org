@@ -1,7 +1,7 @@
 :root {
   --font-primary-stack: adelle-sans, sans-serif;
   --font-secondary-stack: adelle, serif;
-  --font-base-size: 4vmin;
+  --font-base-size: 3vw;
 
   --color-dark: #111;
   --color-light: #eee;
@@ -89,7 +89,7 @@ body {
   margin: 0 auto;
   max-width: 24em;
 }
-@media (max-width: 31.75em) {
+@media (max-width: 42em) {
   body {
     font-size: 125%;
   }
