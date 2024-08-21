@@ -48,7 +48,7 @@ body {
   height: 1px;
   overflow: hidden;
   position: absolute;
-  white-space: nowrap; 
+  white-space: nowrap;
   width: 1px;
 }
 
@@ -87,21 +87,15 @@ body {
   font-weight: normal;
   line-height: 1.5;
   margin: 0 auto;
-  max-width: 24em;
-}
-@media (max-width: 42em) {
-  body {
-    font-size: 125%;
-  }
+  max-width: 28em;
 }
 .hero {
-
   border: 0.15em solid var(--theme-color-fore);
   border-radius: 50%;
   display: block;
   height: auto;
   margin: 0 auto;
-  max-width: 12em;
+  max-width: 10em;
 }
 .entry--content {
   margin: 3em 5% 0;
