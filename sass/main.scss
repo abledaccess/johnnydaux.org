@@ -1,7 +1,7 @@
 :root {
   --font-primary-stack: adelle-sans, sans-serif;
   --font-secondary-stack: adelle, serif;
-  --font-base-size: 3vw;
+  --font-base-size: clamp(100%, 3.5vw, 200%);
 
   --color-dark: #111;
   --color-light: #eee;
@@ -103,6 +103,9 @@ body {
 .entry--title {
   font-size: 2.75em;
   line-height: 1;
+}
+h1 {
+  text-wrap: balance;
 }
 h1,
 .intro {
