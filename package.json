@@ -1,13 +1,22 @@
 {
-  "name": "johnnydaux.org",
+  "name": "johnnydaux",
+  "title": "My name is Johnny, merely one of many",
+  "description": "I’m more than a disabled web developer, but not much more. Plus, as evidenced by my continued existence, I'm also a stubbornly thriving, plant powered, antifascist!",
   "version": "1.0.0",
-  "description": "\"But I’m so much more than a disabled web developer. Plus, as evidenced by my continued existence, I'm also a stubbornly thriving, plant powered, antifascist!\"",
   "main": "index.js",
+  "homepage": "https://johnnydaux.org/",
+  "author": {
+    "name": "Johnny Taylor",
+    "email": "hi@johnnydaux.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abledaccess/johnnydaux.org"
+  },
   "scripts": {
     "postcss:watch": "postcss src/main.css --dir public --watch"
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "cssnano": "^7.0.5",
