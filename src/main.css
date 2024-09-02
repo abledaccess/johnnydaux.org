@@ -87,7 +87,7 @@ body {
   margin: 0 auto;
   max-width: 25em;
 }
-@supports (display: grid) {
+@supports (grid-template-columns: minmax(5%, 1fr)) and (grid-template-columns: min(100% - (5% * 2), 25em)) {
   body {
     display: grid;
     grid-template-columns: 
