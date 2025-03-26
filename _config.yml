@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: "My name is Johnny, merely one of many"
-description: "And I’m more than a disabled web developer, but not much more. Plus, as evidenced by my continued existence, I'm also a stubbornly thriving, plant powered, antifascist!"
+description: "And I’m more than a disabled web developer, but not much more. Plus, as evidenced by my continued existence, I'm also a stubbornly boyant (hat tip), plant powered, antifascist!"
 email: hi@johnnydaux.org
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://johnnydaux.org/" # the base hostname & protocol for your site, e.g. http://example.com
@@ -23,7 +23,6 @@ url: "http://johnnydaux.org/" # the base hostname & protocol for your site, e.g.
 markdown: kramdown
 plugins:
   - jekyll-feed
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
