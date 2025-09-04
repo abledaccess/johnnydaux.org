@@ -8,10 +8,6 @@
   <meta name="viewport" content="initial-scale=1.0, width=device-width">
   <meta name="color-scheme" content="light dark">
 
-  <script>
-    document.documentElement.classList.replace('no-js', 'js');
-  </script>
-
   <title>{% if page.class == 'home' %}{{ site.title }}{% else %}{{ page.title }} &ndash; {{ site.title }}{% endif %}</title>
 
   <link rel="stylesheet" href="/public/main.css">
@@ -49,6 +45,10 @@
     </section>
 
   </main>
+
+  <script>
+    document.documentElement.classList.replace('no-js', 'js');
+  </script>
 
 </body>
 
