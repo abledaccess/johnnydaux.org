@@ -6,17 +6,15 @@
 
   --color-dark: #111;
   --color-light: #eee;
-
-  --theme-color-fore: var(--color-dark);
-  --theme-color-back: var(--color-light);
-  --theme-color-link: #00f;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --theme-color-fore: var(--color-light);
-    --theme-color-back: var(--color-dark);
-    --theme-color-link: #99f;
-  }
+  --light-theme-color-fore: var(--color-dark);
+  --light-theme-color-back: var(--color-light);
+  --light-theme-color-link: #00f;
+  --dark-theme-color-fore: var(--color-light);
+  --dark-theme-color-back: var(--color-dark);
+  --dark-theme-color-link: #99f;
+  --color-fore: light-dark(var(--light-theme-color-fore), var(--dark-theme-color-fore));
+  --color-back: light-dark(var(--light-theme-color-back), var(--dark-theme-color-back));
+  --color-link: light-dark(var(--light-theme-color-link), var(--dark-theme-color-link));
 }
 
 /**
@@ -57,11 +55,11 @@ img {
   width: 100%;
 }
 a:is(:link, :visited) {
-  color: var(--theme-color-link);
+  color: var(--color-link);
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
   &:focus {
-    outline: 2px solid var(--theme-color-link);
+    outline: 2px solid var(--color-link);
     outline-offset: 2px;
     position: relative;
     text-decoration: none;
@@ -71,15 +69,18 @@ a:is(:link, :visited) {
     outline: none;
   }
   &:focus-visible {
-    outline: max(2px, 0.125em) solid var(--theme-color-link);
+    outline: max(2px, 0.125em) solid var(--color-link);
     outline-offset: 0.2em;
     text-decoration: none;
   }
 }
 
+html {
+  color-scheme: light dark;
+}
 body {
-  background-color: var(--theme-color-back);
-  color: var(--theme-color-fore);
+  background-color: var(--color-back);
+  color: var(--color-fore);
   font-family: var(--font-primary-stack);
   font-size: var(--font-base-size);
   font-weight: normal;
@@ -105,7 +106,7 @@ body {
   }
 }
 .hero {
-  border: 0.15em solid var(--theme-color-fore);
+  border: 0.15em solid var(--color-fore);
   border-radius: 50%;
   display: block;
   height: auto;
@@ -135,6 +136,6 @@ h1,
 }
 .icon {
   display: inline-block;
-  fill: var(--theme-color-link);
+  fill: var(--color-link);
   width: 3em;
 }
